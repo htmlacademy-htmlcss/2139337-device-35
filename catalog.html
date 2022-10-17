@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+      <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Rubik&display=swap" rel="stylesheet">
+
     <title>Каталог интернет-магазина Device</title>
   </head>
   <header class="page-header">
     <h1 class="visually-hidden">Device</h1>
-    <img class="logo" src="#" alt="Логотип магазина Device.">
+    <p><a href="index.ntml>"<img class="logo" <img src="Images/logo.svg" width="" heigth="" class="logo" alt="Логотип магазина Device."></a></p>
+    <section class="search">
+      <form><p><input type="search" name="search-field" placeholder="Поиск по сайту"> <button type="button submit" value="Найти">Найти
+        </p>
+      </form>
+     </section>
     <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <form><p><input type="search" name="text" placeholder="Поиск по сайту"> <input type="submit" value="найти">
-           </p></form>
-        </li>
-        <li class="navigation-item"> <input type="button" value="Войти"></li>
-      </ul>
-      <ul class="navigation-list navigation-user"
+      <ul class="navigation-list navigation-user">
         <li class="navigation-item"> <a class="navigation-link" href="#">Коля Петухов</a></li>
         <li class="navigation-item"> <a class="navigation-link" href="#">Выйти</a></li>
         <li class="navigation-item"> <a class="navigation-link" href="#">Сравнить</a></li>
         <li class="navigation-item"> <a class="navigation-link" href="#">Корзина</a> <span>2</span></li>
               </ul>
-      <section class="catalog">
-          <h2 >Каталог товаров</h2>
+        <section class="catalog">
+          <p>Каталог товаров</p>
           <ul class="catalog-list">
-              <li class="catalog-item"> <h2>Каталог</h2><a class="button" href="catalog.html">+</a></li>
+           <li class="catalog-item">
+             <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">+</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <li class="catalog-item"><a class="button" href="#">Моноподы для селфи</a></li>
+                  <li class="catalog-item"><a class="button" href="#">Экшн-камеры</a></li>
+                  <li class="catalog-item"><a class="button" href="#">Фитнес-браслеты</a></li>
+                  <li class="catalog-item"><a class="button" href="#">Умные часы</a></li>
+                  <li class="catalog-item"><a class="button" href="#">Квадрокоптеры</a>
+                </div>
+              </div>
+             </li>
             </ul>
-
-              <ul class="features">
-                <li class="features-item"><a class="button" href="delivery.html"><h2>Доставка</h2></a>
-                  <li class="features-item"><a class="button" href="guarantee.html"><h2>Гарантия</h2></a>
-                    <li class="features-item"><a class="button" href="contacts.html"><h2>Контакты</h2></a>
-                    </ul>
+         <ul class="features">
+          <li class="features-item"><a class="button" href="#">Доставка</a>
+          <li class="features-item"><a class="button" href="#">Гарантия</a>
+          <li class="features-item"><a class="button" href="#">Контакты</a>
+         </ul>
         </section>
        </nav>
     </header>
@@ -50,90 +66,96 @@
 </li>
 </ul>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Стоимость</h2>
-        <form class="cost-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <input type="range" min="0" max="10000" step="any" value="5000">
-      </form>
         <h2 class="visually-hidden">Фильтр:</h2>
+        <h2 class="visually-hidden">Стоимость</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <input type="range" min="0" max="10000" step="any" value="5000">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <label class="control">
-             <input class="control-input" type="checkbox" name="Черный" checked>
+             <input class="control-input" type="checkbox" name="black" checked>
              Чёрный
            </label>
            <label class="control">
-            <input class="control-input" type="checkbox" name="Белый"checked>
+            <input class="control-input" type="checkbox" name="white" checked>
             Белый
           </label>
           <label class="control">
-           <input class="control-input" type="checkbox" name="Синий">
+           <input class="control-input" type="checkbox" name="blue">
            Синий
          </label>
          <label class="control">
-          <input class="control-input" type="checkbox" name="Красный">
+          <input class="control-input" type="checkbox" name="red">
           Красный
         </label>
         <label class="control">
-         <input class="control-input" type="checkbox" name="Розовый">
+         <input class="control-input" type="checkbox" name="pink">
          Розовый
        </label>
           </fieldset>
               <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <label class="control">
-               <input class="control-input" type="checkbox" name="Есть" checked>
+               <input class="control-input" type="radio" name="bluetooth" value="avaliabel" id="check1" checked>
                Есть
              </label>
              <label class="control">
-              <input class="control-input" type="checkbox" name="Нет">
+              <input class="control-input" type="radio" name="bluetooth" value="nonavaliabel" id="check2">
               Нет
             </label>
           </fieldset>
             <button class="button" type="submit">Показать</button>
         </form>
          <h2 class="visually-hidden">Сортировка:</h2>
+<!-- СОРТИРОВКА ПО ВОЗРАСТАНИЮ И УБЫВАНИЮ -->
+      <form>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option selected>
           <option value="cheap">Дешёвые</option>
           <option value="expensive">Дорогие</option>
         </select>
+      </form>
         <ul class="product-list">
         <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="Images/product-2.jpg" width="" heigth="" alt="">
             <h3 class="product-card-title">Любительская
 селфи-палка</h3>
           </a>
           <span class="product-card-price">500 ₽</span>
+          <a class="product-more" "visually-hidden" href="#">подробнее</a>
         </li>
             <li class="product-card">
-              <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="" alt="">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="Images/product-2-1.jpg" width="" heigth="" alt="">
                 <h3 class="product-card-title">Профессиональная селфи-палка </h3>
               </a>
               <span class="product-card-price">1500 ₽</span>
+              <a class="product-more" "visually-hidden" href="#">подробнее</a>
             </li>
                 <li class="product-card">
-                  <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="" alt="">
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image"src="Images/product-2-2.jpg" width="" heigth="" alt="">
                     <h3 class="product-card-title">Непотопляемая
 селфи-палка</h3>
                   </a>
                   <span class="product-card-price">2500 ₽</span>
+                  <a class="product-more" "visually-hidden" href="#">подробнее</a>
                 </li>
                     <li class="product-card">
-                      <a class="product-card-link" href="product.html">
-                        <img class="product-card-image" src="" alt="">
+                      <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="Images/product-2-3.jpg" width="" heigth="" alt="">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                       </a>
                       <span class="product-card-price">1500 ₽</span>
+                      <a class="product-more" "visually-hidden" href="#">подробнее</a>
                     </li>
                     </ul>
                     <ul class="pagination">
+        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Назад</span>
+              Назад
             </a>
           </li>
           <li class="pagination-item">
@@ -153,34 +175,19 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Вперёд</span>
+              Вперёд
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
       </section>
 </header>
 </main>
   <body>
 
     <footer class="page-footer">
-      <section class="newsletter">
-          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-         <span> Еженедельный дайджест с обзорами новинок,
-   длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</span>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="newsletter-email">Email</label>
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">
-                  <span class="visually-hidden">Подписаться</span>
-              </button>
-               <img src="#" alt="галочка">
-              <span>Это бесплатно!</span>
-          </form>
-      </section>
         <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img class="footer-contacts-logo" src="#" alt="Логотип интернет-магазина Device">
+             <a href="index.html"><img class="footer-contacts-logo" src="Images/logofooter.png" alt="Логотип интернет-магазина Device"></a>
             <address class="footer-contacts-address">
                 <p class="about-text"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a class="footer-contacts-address-phone" href="tel:880005558628">8 800 555-86-28</a>
