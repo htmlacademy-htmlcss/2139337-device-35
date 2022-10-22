@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-      <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Rubik&display=swap" rel="stylesheet">
-
     <title>Каталог интернет-магазина Device</title>
   </head>
   <header class="page-header">
     <h1 class="visually-hidden">Device</h1>
-    <p><a href="index.ntml>"<img class="logo" <img src="Images/logo.svg" width="" heigth="" class="logo" alt="Логотип магазина Device."></a></p>
+    <a href="index.ntml"><img class="logo" src="Images/logo.svg"  alt="Логотип магазина Device."></a>
     <section class="search">
-      <form><p><input type="search" name="search-field" placeholder="Поиск по сайту"> <button type="button submit" value="Найти">Найти
-        </p>
+      <form>
+        <input type="search" name="search-field" placeholder="Поиск по сайту">
+        <button type="submit" value="Найти">Найти</button>
       </form>
      </section>
     <nav class="navigation">
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"> <a class="navigation-link" href="#">Коля Петухов</a></li>
-        <li class="navigation-item"> <a class="navigation-link" href="#">Выйти</a></li>
-        <li class="navigation-item"> <a class="navigation-link" href="#">Сравнить</a></li>
-        <li class="navigation-item"> <a class="navigation-link" href="#">Корзина</a> <span>2</span></li>
-              </ul>
-        <section class="catalog">
-          <p>Каталог товаров</p>
-          <ul class="catalog-list">
-           <li class="catalog-item">
-             <div class="dropdown">
-               <button onclick="myFunction()" class="dropbtn">+</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <li class="catalog-item"><a class="button" href="#">Моноподы для селфи</a></li>
-                  <li class="catalog-item"><a class="button" href="#">Экшн-камеры</a></li>
-                  <li class="catalog-item"><a class="button" href="#">Фитнес-браслеты</a></li>
-                  <li class="catalog-item"><a class="button" href="#">Умные часы</a></li>
-                  <li class="catalog-item"><a class="button" href="#">Квадрокоптеры</a>
-                </div>
-              </div>
-             </li>
+       <li class="navigation-item">
+        <a class="navigation-link" href="#">Коля Петухов</a>
+       </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="#">Выйти</a>
+       </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="#">Сравнить</a>
+       </li>
+        <li class="navigation-item">
+        <a class="navigation-link" href="#">Корзина</a>
+        <span>2</span>
+      </li>
+      </ul>
+      <section class="catalog">
+            <ul class="catalog-list">
+               <li class="catalog-menu-item">
+               <a href="catalog.html" class="catalog-menu-link">Каталог товаров</a>
+               <button class="catalog-menu-expand" type="button" aria-label="показать меню">+</button>
+               <ul class="subcatalog">
+                    <li class="subcatalog-item"><a class="subitem" href="#">Моноподы для селфи</a></li>
+                    <li class="subcatalog-item"><a class="subitem" href="#">Экшн-камеры</a></li>
+                    <li class="subcatalog-item"><a class="subitem" href="#">Фитнес-браслеты</a></li>
+                    <li class="subcatalog-item"><a class="subitem" href="#">Умные часы</a></li>
+                    <li class="subcatalog-item"><a class="subitem" href="#">Квадрокоптеры</a>
+               </ul>
+               <li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Доставка</a>
+               <li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Гарантия</a>
+               <li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Контакты</a>
             </ul>
-         <ul class="features">
-          <li class="features-item"><a class="button" href="#">Доставка</a>
-          <li class="features-item"><a class="button" href="#">Гарантия</a>
-          <li class="features-item"><a class="button" href="#">Контакты</a>
-         </ul>
-        </section>
+         </section>
        </nav>
     </header>
 <main class="main-inner">
@@ -106,22 +105,18 @@
           </fieldset>
             <button class="button" type="submit">Показать</button>
         </form>
-         <h2 class="visually-hidden">Сортировка:</h2>
-<!-- СОРТИРОВКА ПО ВОЗРАСТАНИЮ И УБЫВАНИЮ  button button-->
-
-      <form>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Популярные</option selected>
-          <option value="cheap">Дешёвые</option>
-          <option value="expensive">Дорогие</option>
-        </select>
-      </form>
-      <div>
-       <input type="checkbox" id="stateInput">
-       <label for="stateInput" class="arrows"></label>
-      </div>
-
-
+        <form>
+          <h2 class="visually-hidden">Сортировка:</h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular" selected>Популярные</option>
+              <option value="cheap">Дешёвые</option>
+              <option value="expensive">Дорогие</option>
+              <div class="sort-buttons">
+                <button class="sort-buttons" type="button">1</button>
+                <button class="sort-buttons" type="button">2</button>
+              </div>
+            </select>
+        </form>
         <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -194,7 +189,7 @@
     <footer class="page-footer">
         <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
-             <a href="index.html"><img class="footer-contacts-logo" src="Images/logofooter.png" alt="Логотип интернет-магазина Device"></a>
+             <a href="index.html"><img class="footer-contacts-logo" src="Images/logofooter.svg" alt="Логотип интернет-магазина Device"></a>
             <address class="footer-contacts-address">
                 <p class="about-text"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a class="footer-contacts-address-phone" href="tel:880005558628">8 800 555-86-28</a>
