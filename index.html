@@ -62,8 +62,8 @@
       <div class="slider-container">
         <div class="slider-items">
           <div class="slide slide-active">
-            <img class="slider-image" src="img/slider-1.png" width="560px" height="560px"  alt="Квадрокоптер.">
-            <p>Порхает как бабочка, жалит как пчела!</p>
+            <img class="slider-image" src="img/slider-1.png" width="560" height="560"  alt="Квадрокоптер.">
+            <p class="slider-header">Порхает как бабочка, жалит как пчела!</p>
             <p class="description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="description-link" href="#">Подробнее</a>
             <ul class="description-list">
@@ -79,7 +79,7 @@
           </div>
           <div class="slide">
             <img class="slider-image" src="img/slider-2.png"  alt="Фитнес-браслет.">
-            <p>Худеем правильно!</p>
+            <p class="slider-header">Худеем правильно!</p>
             <p class="description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="description-link" href="#">Подробнее</a>
             <ul class="description-list">
@@ -95,7 +95,7 @@
           </div>
           <div class="slide">
             <img class="slider-image" src="img/slider-3.png"  alt="Селфи-палка.">
-            <p>Делай селфи, как Бен Стиллер! </p>
+            <p class="slider-header">Делай селфи, как Бен Стиллер! </p>
             <p class="description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="description-link" href="#">Подробнее</a>
             <ul class="description-list">
@@ -176,18 +176,18 @@
         <div class="slider-items-features">
           <div class="slide slide-active">
             <img class="img_1" src="img/deliveryboy.svg"  alt="Доставка">
-            <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <h2 class="features-header">Доставка</h2>
+            <p class="features-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
           <div class="slide">
             <img class="img_2" src="img/guarantee.svg"  alt="Гарантия">
-            <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <h2 class="features-header">Гарантия</h2>
+            <p class="features-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
           <div class="slide">
             <img class="img_3" src="img/credit.svg"  alt="Кредит">
-            <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            <h2 class="features-header">Кредит</h2>
+            <p class="features-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </div>
@@ -237,9 +237,9 @@
         <label for="newsletter-email">Email</label>
         <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
         <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
+          <span class="subscribe">Подписаться</span>
         </button>
-        <span>Это бесплатно!</span>
+        <span class="free-feature">Это бесплатно!</span>
       </form>
     </section>
   </main>
@@ -247,21 +247,21 @@
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a href="index.html"><img class="footer-contacts-logo" src="img/logofooter.svg"  alt="Логотип интернет-магазина Device"></a>
-      <address class="footer-contacts-address">
-        <p class="about-text"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a class="footer-contacts-address-phone" href="tel:880005558628">8 800 555-86-28</a>
-      </address>
+        <p class="footer-contacts-address"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="footer-contacts-phone">
+          <a class="footer-contacts-phone" href="tel:880005558628">8 800 555-86-28</a>
+        </p>
     </section>
     <section class="footer-social">
-      <ul class="footer-info-list">
-        <li class="footer-delivery-link">
-          <a class="delivery-link" href="#">Доставка</a>
+      <ul class="footer-capabilities-list">
+        <li class="footer-capabilities-link">
+          <a class="capabilities-link" href="#">Доставка</a>
         </li>
-        <li class="footer-guarantee-link">
-          <a class="guarantee-link" href="#">Гарантия</a>
+        <li class="footer-capabilities-link">
+          <a class="capabilities-link" href="#">Гарантия</a>
         </li>
-        <li class="footer-contacts-link">
-          <a class="contacts-link" href="#">Контакты</a>
+        <li class="footer-capabilities-link">
+          <a class="capabilities-link" href="#">Контакты</a>
         </li>
       </ul>
       <ul class="footer-social-list">
@@ -281,9 +281,9 @@
           </a>
         </li>
       </ul>
-      <p class="about-text">Сделано в
+      <p class="about-text">
         <a class="html-academy-link" href="https://htmlacademy.ru">
-          <img src="img/breadcrumbs/htmlacadlink.svg" alt=".html academy">
+          <img src="img/htmlacadlink.svg" alt=".html academy">
         </a>
       </p>
     </section>
