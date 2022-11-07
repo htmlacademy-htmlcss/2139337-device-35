@@ -9,14 +9,14 @@
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src:url(..fonts/rubik/rubik-400.woff2);
+  src:url(../fonts/rubik/rubik-400.woff2);
   font-display: swap;
 }
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
-  src:url(..fonts/rubik/rubik-700.woff2);
+  src:url(../fonts/rubik/rubik-700.woff2);
   font-display: swap;
 }
 body {
@@ -131,8 +131,7 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
-.about a {
-  font-family: 'Rubik';
+.delivery-list a {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -140,7 +139,7 @@ body {
   letter-spacing: -0.02em;
   color: inherit;
 }
-.about button {
+.about .button {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 18px;
@@ -149,6 +148,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
+  text-decoration: none;
+}
+.about p {
+  color: #444444;
 }
 .contacts h2 {
   font-family: 'Raleway', 'sans-serif';
@@ -243,11 +246,11 @@ body {
   color: #FFFFFF;
 }
 .html-academy-link {
-width: 114.9px;
-height: 32.9px;
-left: 0px;
-top: 0px;
-text-decoration: none;
+  width: 114.9px;
+  height: 32.9px;
+  left: 0px;
+  top: 0px;
+  text-decoration: none;
 }
 .main-inner {
   background: #FFFFFF;
