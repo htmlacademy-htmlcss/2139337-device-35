@@ -97,6 +97,7 @@ body {
 
 }
 .main-container {
+  width: 100%;
   flex-grow:1;
 }
 .catalog  {
@@ -167,7 +168,7 @@ body {
   flex-direction: row;
   width: 1160px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .catalog-item {
   margin-right: 40px;
@@ -210,10 +211,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 0px;
   width: 1160px;
-  margin: 70px 140px;
+  margin: auto;
   background-color: #F0F0F0;
 }
 .delivery a {
@@ -233,7 +233,7 @@ body {
   align-items: center;
   padding: 0px;
   width: 1160px;
-  margin: 0 140px;
+  margin: auto;
 }
 .features-toggles {
   display: flex;
@@ -241,6 +241,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   width: 280px;
+  margin-right: 116px;
 }
 .slide-features {
   display: flex;
@@ -260,7 +261,7 @@ body {
 }
 .wrap-slider-features {
   background: #F0F0F0;
-  width: 1440px;
+  width: 100%;
 }
 
 .about-title {
@@ -272,24 +273,35 @@ body {
 .about-wrap{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
-  width: 1160px;
-  margin-left: 140px;
-  margin-right: 140px;
+  width: 100%;
 }
 .about {
   display: flex;
   flex-direction: column;
-  padding: 0;
   width: 520px;
-  margin-right: 106px;
+  margin: auto;
 }
 .contacts {
   display: flex;
   flex-direction: column;
-  padding: o;
   width: 532px;
+  margin:auto;
+}
+.container-footer-title{
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: auto;
+  align-items: baseline;
+}
+.container-form {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: auto;
+  justify-content: space-around;
 }
 .delivery-list a {
   font-weight: 700;
@@ -353,28 +365,16 @@ body {
 }
 
 .newsletter {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  padding: 0;
-  align-items: center;
+  width: 100%;
   background: #F0F0F0;
 }
 .newsletter h2 {
-  width: 348px;
-  padding: 0;
-  margin-left: 147px;
-  margin-right: 945px;
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 .newsletter p {
-  width: 560px
-  padding: 0;
-  margin-left: 747px;
-  margin-right: 133px;
   color: #444444;
 }
 .newsletter-form {
@@ -405,9 +405,7 @@ body {
   color: #444444;
 }
 .page-footer {
-  display:flex;
-  flex-direction: row;
-  width: 1440px;
+  width: 100%;
   padding: 0;
   background: #444444;
   color: #ffffff;
@@ -415,10 +413,6 @@ body {
 .footer-contacts-address {
   font-size: 16px;
   line-height: 20px;
-  width: 239px;
-  margin-left: 140px;
-  margin-right: 119px;
-  padding: 0px;
 }
 .footer-contacts-phone {
   font-size: 16px;
@@ -435,6 +429,21 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+.container-footer-contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: auto;
+}
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 444px;
+  margin: auto;
 }
 .html-academy-link {
   width: 114.9px;
@@ -453,10 +462,20 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
+.container-inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 1079px;
+  margin: auto;
+  align-items: flex-start;
+}
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  width: 429px;
+  justify-content: space-between;
   color: #000000;
 }
-
 .breadcrumbs-link {
   font-family: 'Raleway', 'sans-serif';
   font-style: normal;
@@ -464,6 +483,36 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+.container-catalog-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  width: 840px;
+}
+.container-catalog-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  margin: 0;
+}
+.container-list {
+  display: flex;
+  width: 840px;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.container-catalog-products {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1160px;
+  margin: auto;
+  flex-wrap: wrap;
 }
 .catalog-products {
   background: #F0F0F0;

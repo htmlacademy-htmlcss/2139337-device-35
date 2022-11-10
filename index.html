@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="page-header">
-    <!-- див для хедеора -->
+    <!-- див для хедера -->
     <div class="container">
     <a href="index.html"><img src="img/logo.svg"  class="logo"  alt="Логотип магазина Device."></a>
     <div class="users-items">
@@ -85,39 +85,43 @@
           </div>
           <div class="slide">
             <img class="slider-image" src="img/slider-2.png"  alt="Фитнес-браслет.">
-            <p class="slider-header">Худеем правильно!</p>
-            <p class="description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="description-link" href="#">Подробнее</a>
-            <ul class="description-list">
-              <li class="description-item">
-                <b class="description-value">48 часов </b>
-                <span class="description-name">Без подзарядки</span>
-              </li>
-              <li class="description-item">
-                <b class="description-value">50 м</b>
-                <span class="description-name">Радиус поражения</span>
-              </li>
-            </ul>
+            <div class="slide-description">
+              <p class="slider-header">Худеем правильно!</p>
+              <p class="description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="description-link" href="#">Подробнее</a>
+              <ul class="description-list">
+                <li class="description-item">
+                  <b class="description-value">48 часов </b>
+                  <span class="description-name">Без подзарядки</span>
+                </li>
+                <li class="description-item">
+                  <b class="description-value">50 м</b>
+                  <span class="description-name">Радиус поражения</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="slide">
             <img class="slider-image" src="img/slider-3.png"  alt="Селфи-палка.">
-            <p class="slider-header">Делай селфи, как Бен Стиллер! </p>
-            <p class="description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a class="description-link" href="#">Подробнее</a>
-            <ul class="description-list">
-              <li class="description-item">
-                <b class="description-value">8.5 м</b>
-                <span class="description-name">Длина палки</span>
-              </li>
-              <li class="description-item">
-                <b class="description-value">5 кг</b>
-                <span class="description-name">Вес палки</span>
-              </li>
-              <li class="description-item">
-                <b class="description-value">Карбон</b>
-                <span class="description-name">Материал</span>
-              </li>
-            </ul>
+            <div class="slide-description">
+              <p class="slider-header">Делай селфи, как Бен Стиллер! </p>
+              <p class="description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="description-link" href="#">Подробнее</a>
+              <ul class="description-list">
+                <li class="description-item">
+                  <b class="description-value">8.5 м</b>
+                  <span class="description-name">Длина палки</span>
+                </li>
+                <li class="description-item">
+                  <b class="description-value">5 кг</b>
+                  <span class="description-name">Вес палки</span>
+                </li>
+                <li class="description-item">
+                  <b class="description-value">Карбон</b>
+                  <span class="description-name">Материал</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="slider-toggles">
             <button class="slider-toggle  arrow-next" type="button"></button>
@@ -172,7 +176,7 @@
       </ul>
     </section>
     <div class="wrap-slider-features">            <!-- слайдер с фичерами -->
-      <section class="slider-features">
+      <section class="container">
         <div class="slider-container-features">
           <div class="features-toggles">
             <button class="features-toggle" type="button">Доставка</button>
@@ -246,38 +250,46 @@
       </section>
     </div>
     <section class="newsletter">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p> Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">
-          <span class="subscribe">Подписаться</span>
-        </button>
-        <span class="free-feature">Это бесплатно!</span>
-      </form>
+      <div class="container">
+        <div class="container-footer-title">
+          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+          <p> Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </div>
+        <div class="container-form">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="newsletter-email">Ваш e-mail</label>
+            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">
+              <span class="subscribe">Подписаться</span>
+            </button>
+            <span class="free-feature">Это бесплатно!</span>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <section class="footer-contacts">
       <a href="index.html"><img class="footer-contacts-logo" src="img/logofooter.svg"  alt="Логотип интернет-магазина Device"></a>
-        <p class="footer-contacts-address"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <p class="footer-contacts-phone">
-          <a class="footer-contacts-phone" href="tel:880005558628">8 800 555-86-28</a>
-        </p>
-    </section>
-    <section class="footer-social">
-      <ul class="footer-capabilities-list">
-        <li class="footer-capabilities-link">
-          <a class="capabilities-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-capabilities-link">
-          <a class="capabilities-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-capabilities-link">
-          <a class="capabilities-link" href="#">Контакты</a>
-        </li>
-      </ul>
+        <div class="container-footer-contacts">
+          <p class="footer-contacts-address"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-contacts-phone">
+            <a class="footer-contacts-phone" href="tel:880005558628">8 800 555-86-28</a>
+          </p>
+        </div>
+      </section>
+      <section class="footer-social">
+        <ul class="footer-capabilities-list">
+          <li class="footer-capabilities-link">
+            <a class="capabilities-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-capabilities-link">
+            <a class="capabilities-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-capabilities-link">
+            <a class="capabilities-link" href="#">Контакты</a>
+          </li>
+        </ul>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://tg.com/htmlacademy">
