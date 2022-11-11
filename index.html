@@ -7,59 +7,57 @@
 </head>
 <body>
   <header class="page-header">
-    <!-- див для хедера -->
-    <div class="container">
-    <a href="index.html"><img src="img/logo.svg"  class="logo"  alt="Логотип магазина Device."></a>
-    <div class="users-items">
-      <section class="search">
-        <form>
-          <input type="search" name="search-field" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>
-      </section>
-      <nav class="navigation">
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item login"><img src="img/clientfig.svg" class="clientfig" alt=""><button type="button">Войти</button></li>
-          <li class="navigation-item"><img src="img/compare.svg" class="compare" alt=""><a class="navigation-link" href="#">Сравнить</a></li>
-          <li class="navigation-item"><img src="img/bucket.svg" class="bucket" alt=""><a class="navigation-link" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </div>
-      <section class="catalog">
-        <ul class="catalog-list">
-          <li class="catalog-menu-item">
-            <a href="catalog.html" class="catalog-menu-link">Каталог товаров</a>
-            <button class="catalog-menu-expand" type="button" aria-label="показать меню">+</button>
-            <ul class="subcatalog">
-              <li class="subcatalog-item">
-                <a class="subitem" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subitem" href="#">Экшн-камеры</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subitem" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subitem" href="#">Умные часы</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subitem" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </li>
-          <li class="catalog-menu-item">
-            <a class="catalog-menu-link" href="#">Доставка</a>
-          </li>
-          <li class="catalog-menu-item">
-            <a class="catalog-menu-link" href="#">Гарантия</a>
-          </li>
-          <li class="catalog-menu-item">
-            <a class="catalog-menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </section>
+  <!-- див для хедера -->
+  <a href="index.html"><img src="img/logo.svg"  class="logo"  alt="Логотип магазина Device."></a>
+  <div class="users-items">
+    <section class="search">
+      <form>
+        <input type="search" name="search-field" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
+    </section>
+    <nav class="navigation">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item login"><img src="img/clientfig.svg" class="clientfig" alt=""><button type="button">Войти</button></li>
+        <li class="navigation-item"><img src="img/compare.svg" class="compare" alt=""><a class="navigation-link" href="#">Сравнить</a></li>
+        <li class="navigation-item"><img src="img/bucket.svg" class="bucket" alt=""><a class="navigation-link" href="#">Корзина</a></li>
+      </ul>
+    </nav>
   </div>
+    <nav class="catalog">
+      <ul class="catalog-list">
+        <li class="catalog-menu-item">
+          <a href="catalog.html" class="catalog-menu-link">Каталог товаров</a>
+          <button class="catalog-menu-expand" type="button" aria-label="показать меню">+</button>
+          <ul class="subcatalog">
+            <li class="subcatalog-item">
+              <a class="subitem" href="#">Моноподы для селфи</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subitem" href="#">Экшн-камеры</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subitem" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subitem" href="#">Умные часы</a>
+            </li>
+            <li class="subcatalog-item">
+              <a class="subitem" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="catalog-menu-item">
+          <a class="catalog-menu-link" href="#">Доставка</a>
+        </li>
+        <li class="catalog-menu-item">
+          <a class="catalog-menu-link" href="#">Гарантия</a>
+        </li>
+        <li class="catalog-menu-item">
+          <a class="catalog-menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main-container">
     <section class="slider">
@@ -136,7 +134,7 @@
       </div>
     </section>
     <section class="catalog-section">
-      <ul class="catalog-list-item">
+      <ul class="catalog-links">
         <li class="catalog-item">
           <a class="catalog-item-link" href="#">
           <img src="img/categoryvr.svg" alt="Виртуальная реальность">
@@ -215,7 +213,7 @@
         <span>доставим редкий товар под заказ</span>
       </a>
     </section>
-    <div class="about-wrap">
+    <div class="about-wrap container">
       <section class="about">
         <h2 class="about-title"> О нас</h2>
         <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -251,8 +249,8 @@
     </div>
     <section class="newsletter">
       <div class="container">
-        <div class="container-footer-title">
-          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+        <div class="container-newsletter-title">
+          <h2 class="page-newsletter-title">Подпишитесь на рассылку</h2>
           <p> Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="container-form">
@@ -271,25 +269,25 @@
   <footer class="page-footer">
     <section class="footer-contacts">
       <a href="index.html"><img class="footer-contacts-logo" src="img/logofooter.svg"  alt="Логотип интернет-магазина Device"></a>
-        <div class="container-footer-contacts">
-          <p class="footer-contacts-address"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <div class="footer-top-line">
+          <p class="footer-contacts-address"> Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</br></p>
+          <ul class="footer-capabilities-list">
+            <li class="footer-capabilities-link">
+              <a class="capabilities-link" href="#">Доставка</a>
+            </li>
+            <li class="footer-capabilities-link">
+              <a class="capabilities-link" href="#">Гарантия</a>
+            </li>
+            <li class="footer-capabilities-link">
+              <a class="capabilities-link" href="#">Контакты</a>
+            </li>
+          </ul>
           <p class="footer-contacts-phone">
             <a class="footer-contacts-phone" href="tel:880005558628">8 800 555-86-28</a>
           </p>
         </div>
       </section>
-      <section class="footer-social">
-        <ul class="footer-capabilities-list">
-          <li class="footer-capabilities-link">
-            <a class="capabilities-link" href="#">Доставка</a>
-          </li>
-          <li class="footer-capabilities-link">
-            <a class="capabilities-link" href="#">Гарантия</a>
-          </li>
-          <li class="footer-capabilities-link">
-            <a class="capabilities-link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <section class="footer-bottom-line">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://tg.com/htmlacademy">

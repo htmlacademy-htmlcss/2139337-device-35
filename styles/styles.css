@@ -40,6 +40,7 @@ body {
   margin: 0 auto;
 }
 .page-header {
+  box-sizing: border-box;
   color: #000000;
   background: #FFE17F;
   width:1160px;
@@ -50,7 +51,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 60px;
 }
 .search {
   display: flex;
@@ -109,7 +109,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  padding: 0 60px;
 }
 .catalog-list {
   margin: 0;
@@ -163,7 +162,7 @@ body {
   font-size: 16px;
   line-height: 30px;
 }
-.catalog-list-item {
+.catalog-links {
   display: flex;
   flex-direction: row;
   width: 1160px;
@@ -208,15 +207,14 @@ body {
   color: #444444;
 }
 .delivery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px;
   width: 1160px;
   margin: auto;
   background-color: #F0F0F0;
 }
 .delivery a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 20px;
@@ -231,9 +229,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  width: 1160px;
-  margin: auto;
 }
 .features-toggles {
   display: flex;
@@ -275,21 +270,14 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
-  width: 100%;
 }
 .about {
-  display: flex;
-  flex-direction: column;
   width: 520px;
-  margin: auto;
 }
 .contacts {
-  display: flex;
-  flex-direction: column;
   width: 532px;
-  margin:auto;
 }
-.container-footer-title{
+.container-newsletter-title{
   display: flex;
   flex-direction: row;
   width: 1160px;
@@ -311,7 +299,7 @@ body {
   letter-spacing: -0.02em;
   color: inherit;
 }
-.about .button {
+.about a {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 18px;
@@ -378,14 +366,6 @@ body {
   color: #444444;
 }
 .newsletter-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  width: 1158px;
-  margin: 0 141px;
-
 }
 .newsletter-email {
   color: #444444;
@@ -406,7 +386,6 @@ body {
 }
 .page-footer {
   width: 100%;
-  padding: 0;
   background: #444444;
   color: #ffffff;
 }
@@ -420,7 +399,7 @@ body {
   text-decoration-line: underline;
   color: #FFFFFF
 }
-.footer-social a {
+.footer-bottom-line a {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 18px;
@@ -430,20 +409,34 @@ body {
   text-decoration: none;
   color: #FFFFFF;
 }
-.container-footer-contacts{
+.footer-top-line{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 1160px;
   margin: auto;
 }
-.footer-social {
+.footer-capabilities-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 444px;
+  justify-content: space-between;
+}
+.footer-capabilities-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-bottom-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: auto;
+}
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 .html-academy-link {
   width: 114.9px;
@@ -465,8 +458,8 @@ body {
 .container-inner-header {
   display: flex;
   flex-direction: column;
-  width: 1079px;
-  margin: auto;
+  width: 1160px;
+  margin-left: 60px;
   align-items: flex-start;
 }
 .breadcrumbs {
@@ -499,17 +492,8 @@ body {
   width: 320px;
   margin: 0;
 }
-.container-list {
-  display: flex;
-  width: 840px;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0 40px 0 40px;
-}
 .product-card:nth-child(odd) {
-  padding-right: 40px;
+  margin-right: 40px;
 }
 .sort-container {
   display: flex;
@@ -579,6 +563,12 @@ body {
   line-height: 30px;
 }
 .product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 40px 0 40px;
   background: #FFFFFF;
 }
 .product-card h2 {
@@ -618,7 +608,6 @@ body {
   display:flex;
   flex-direction: column;
   align-content: center;
-  width: 1160px;
   padding: 0;
 }
 .pagination-list {
