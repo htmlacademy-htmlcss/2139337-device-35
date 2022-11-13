@@ -76,7 +76,6 @@ body {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  padding-right: 26px;
 }
 .navigation-item .login {
   margin-left: 26px;
@@ -185,6 +184,8 @@ body {
   letter-spacing: -0.02em;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 .features-toggle {
   font-family: 'Raleway', 'sans-serif';
@@ -211,7 +212,7 @@ body {
   margin: auto;
   background-color: #F0F0F0;
 }
-.delivery a {
+.delivery-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -268,7 +269,7 @@ body {
 .about-wrap{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
 }
 .about {
@@ -385,9 +386,22 @@ body {
   color: #444444;
 }
 .page-footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
   background: #444444;
   color: #ffffff;
+}
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 .footer-contacts-address {
   font-size: 16px;
@@ -456,16 +470,16 @@ body {
   line-height: 50px;
 }
 .container-inner-header {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 1160px;
-  margin-left: 60px;
+  padding-left: 60px;
   align-items: flex-start;
 }
 .breadcrumbs {
   display: flex;
   flex-direction: row;
-  width: 429px;
   justify-content: space-between;
   color: #000000;
 }
@@ -476,6 +490,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: inherit;
 }
 .container-catalog-inner {
   display: flex;
@@ -499,8 +514,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 840px;
-  margin: auto;
 }
 .container-catalog-products {
   display: flex;
@@ -517,6 +530,7 @@ body {
   width: 1160px;
   margin:auto;
   flex-wrap: wrap;
+  background-color: #F0F0F0;
 }
 .catalog-products h2 {
   font-family: 'Raleway', 'sans-serif';
@@ -607,19 +621,20 @@ body {
 .catalog-pagination {
   display:flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   padding: 0;
+  width: 100%;
 }
 .pagination-list {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 40px 0 40px;
   background: #EBEBEB;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #444444;
+  width: 100%;
 }
 .pagination-link {
   text-decoration: none;
