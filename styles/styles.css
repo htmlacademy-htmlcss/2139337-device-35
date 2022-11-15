@@ -640,11 +640,6 @@ address {
   color: inherit;
   margin-right: 36px;
 }
-.catalog-wrap {
-  display: flex;
-  background: #F0F0F0;
-
-}
 .container-catalog-inner {
   display: flex;
   flex-direction: row;
@@ -687,10 +682,9 @@ address {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
+  width: 1160px;
   margin:auto;
   flex-wrap: wrap;
-  background: #F0F0F0;
 }
 .catalog-products h2 {
   font-family: 'Raleway', 'sans-serif';
@@ -820,6 +814,7 @@ address {
   line-height: 20px;
   text-align: center;
   color: #444444;
+  padding:40px 40px;
 }
 .pagination-prev {
   display: block;
