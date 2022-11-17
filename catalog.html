@@ -10,7 +10,7 @@
     <a href="index.html"><img class="logo" src="img/logo.svg"  alt="Логотип магазина Device."></a>
     <div class="users-items">
       <section class="search">
-        <form>
+        <form class="search-field">
           <input type="search" name="search-field" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
@@ -27,8 +27,7 @@
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
-            <span>2</span>
+            <a class="navigation-link" href="#"><span>2</span>Корзина</a>
           </li>
         </ul>
       </nav>
@@ -68,25 +67,25 @@
       </ul>
     </nav>
   </header>
-  <header class="inner-header">
-    <div class="container-inner-header">
-      <h1 class="inner-header-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
-        </li>
-      </ul>
-    </div>
-  </header>
   <main class="main-inner">
-    <div class="catalog-wrap">
-      <section class="catalog-products">
+    <header class="inner-header">
+      <div class="container-inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="catalog-products">
+      <div class="container-catalog-products">
         <div class="container-catalog-filter">
           <h2>Фильтр:</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -115,7 +114,7 @@
                 Розовый
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group-second">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <label class="control">
                 <input class="control-input" type="radio" name="bluetooth" value="avaliabel" id="check1" checked>
@@ -139,7 +138,7 @@
             </select>
             <div class="sort">
               <button class="sort-button" type="button">up</button>
-              <button class="sort-button" type="button">down</button>
+              <button class="sort-button" type="button">dwn</button>
             </div>
           </form>
           <ul class="product-list">
@@ -209,8 +208,8 @@
             </ul>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
